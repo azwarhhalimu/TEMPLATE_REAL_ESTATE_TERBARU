@@ -18,6 +18,16 @@
     <!-- Font Icons css -->
     <link rel="stylesheet" href="asset/font-icons.css" />
     <link rel="stylesheet" href="asset/style_global.css" />
+    <!-- plugins css -->
+    <link rel="stylesheet" href="asset/plugins.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="asset/style.css" />
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="asset/responsive.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -25,12 +35,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- plugins css -->
-    <link rel="stylesheet" href="asset/plugins.css" />
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="asset/style.css" />
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="asset/responsive.css" />
   </head>
 
   <body>
@@ -218,12 +222,126 @@
         <!-- ltn__header-middle-area end -->
       </header>
 
-      <!--Kontent-->
+      <div class="ltn__utilize-overlay"></div>
+
       <div class="container">
         <div class="row">
-          <h3>Ini adalah halamaman kontak</h3>
+          <div class="col-lg-4">
+            <div style="font-weight: bold">Halo Adminstrator</div>
+            <div class="widget ltn__menu-widget ltn__menu-widget-2--- ltn__menu-widget-2-color-2---">
+              <h4 class="ltn__widget-title ltn__widget-title-border-2">Menu Administrator</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    >Dashboard <span><i class="fa-solid fa-circle-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Master Properti <span><i class="fa-solid fa-circle-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Master Lokasi <span><i class="fa-solid fa-circle-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Berita <span><i class="fa-solid fa-circle-arrow-right"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#">Duplex House <span>(60)</span></a>
+                </li>
+              </ul>
+            </div>
+            <a href="login.html" style="width: 100%; border-radius: 2px" class="btn theme-btn-1 btn-effect-1 text-uppercase">Logoutx</a>
+          </div>
+          <div class="col-lg-8">
+            <button class="btn btn-sm btn-danger" style="border-radius: 4px"><i class="fa fa-chevron-left"></i>Kembali</button>
+            <h4>Tambah Properti</h4>
+            <hr />
+            <div class="ltn__apartments-tab-content-inner">
+              <h6>Deskripsi</h6>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-item input-item-textarea">
+                    <label>Judul</label>
+                    <input type="text" name="ltn__name" placeholder="Judul" />
+                  </div>
+                  <div class="input-item input-item-textarea">
+                    <label>Deskripsi</label>
+                    <div class="col-lg-6">fd</div>
+                  </div>
+                </div>
+                <h6>Harga Dan kelengkapan</h6>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-item input-item-textarea">
+                      <label>Harga</label>
+                      <input type="text" name="ltn__name" placeholder="Judul" />
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-item input-item-textarea">
+                          <label>Tipe Properti</label>
+                          <select>
+                            <option value="">-- Tipe --</option>
+                            <option value="">Di Jual</option>
+                            <option value="">Di Sewakan</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="input-item input-item-textarea">
+                          <label>Tipe Properti</label>
+                          <select>
+                            <option value="">-- Jenis Propert --</option>
+                            <option value="">Tanah</option>
+                            <option value="">Bangunan</option>
+                            <option value="">Apartman</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <h6>Lokasi</h6>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-item input-item-textarea">
+                          <label>Lokasi</label>
+                          <select>
+                            <option value="">-- Pilih Lokasi --</option>
+                            <option value="">Kecamatan Wolio</option>
+                            <option value="">Kecamatan Wale</option>
+                            <option value="">Kecamatan Betombari</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <label>Koordinat</label>
+                        <input type="text" placeholder="48930248,3892840" />
+                      </div>
+                      <div class="col-lg-12">
+                        <label>Alamat Lengkap</label>
+                        <textarea placeholder="Masukkan alamat lengkap"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrapper text-center--- mt-0">
+                  <!-- <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase" >Next Step</button> -->
+                  <a href="#" class="btn theme-btn-1 btn-effect-1 text-uppercase">Next Step</a>
+                </div>
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- FOOTER AREA START -->
       <footer class="ltn__footer-area">
         <div class="footer-top-area section-bg-2 plr--5">
@@ -375,39 +493,6 @@
     <!-- Main JS -->
     <script src="asset/main.js"></script>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        // slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: false,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        // slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: false,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
     <a id="scrollUp" href="https://tunatheme.com/tf/html/quarter-preview/quarter/index.html#top" style="position: fixed; z-index: 2147483647; display: none"><i class="fa fa-angle-up"></i></a>
   </body>
 </html>
